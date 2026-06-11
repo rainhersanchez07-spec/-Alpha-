@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lamg="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/.jpg" type="image/jpeg">
+		
+	<link>
+    <title>JerseysSports</title>
+</head>
+<body>
+	<h1>JerseysSports</h1>
+		
+		<nav>
+
+			
+			<ul>
+			
+				<li><a href="#ini">Inicio</a></li>
+				<li><a href="#tip">Equipamientos</a></li>
+				<li><a href="#inf">Glosario de Diseños</a></li>
+				<li><a href="#">Pedidos </a></li>
+			
+			</ul>
+			
+		</nav>	
+		
+	<div>
+		<form action="procesar.php" method="get" enctype="multipart/form-data">
+			<fieldset>
+				
+				<h1>Pedido</h1>
+				
+				<h2>Registro de Datos</h2>
+				
+					  <label for="correo"><strong>Correo Electrónico:</strong></label>
+				<input type="email" id="correo" name="correo" required
+					   placeholder="Ej: correo@ejemplo.com">
+				<br><br>
+				  
+				<label for="edad"><strong>Edad:</strong></label>
+				<input type="number" id="edad" name="edad" min="1" max="100" required>                      
+				<br><br>
+				
+				<label for="nombre"><strong>Nombre:</strong></label>
+				<input type="text" id="nombre" name="nombre" required 
+					   placeholder="Ej: Carolina"
+					   pattern="[A-Za-z]+"
+					   minlength="4"
+					   maxlength="10">
+				<br><br>
+
+				<label for="apellido"><strong>Apellido:</strong></label>
+				<input type="text" id="apellido" name="apellido" required
+					   title="Ingrese sólo letras"
+					   pattern="[A-Za-z]+"
+					   minlength="4"
+					   maxlength="12">
+				<br><br>
+
+				<label for="fecha_nac"><strong>Fecha de Nacimiento:</strong></label>
+				<input type="date" id="fecha_nac" name="fecha_nac" max="2025-11-22">
+				<br><br>
+
+				<label for="cedula"><strong>Cédula:</strong></label>
+				<input type="text" id="cedula" name="cedula"
+					   pattern="^[VE]-[0-9]{7,8}$"
+					   placeholder="Ej: V-152483"
+					   required>
+				<br><br>
+
+				<label for="telefono"><strong>Teléfono:</strong></label>
+				<input type="tel" id="telefono" name="telefono"
+					   pattern="^(0414|0424|0412|0426|0416)[0-9]{7}$"
+					   placeholder="Ej: 0424-4212345"
+					   required>
+				<br><br>
+
+				<label><strong>Sexo:</strong></label>
+				<input type="radio" id="masculino" name="sexo" value="masculino" required>
+				<span>Masculino</span>
+
+				<input type="radio" id="femenino" name="sexo" value="femenino" required checked>
+				<span>Femenino</span>
+				<br><br>
+				
+				<h3>Equipamiento</h3>
+
+				<label>
+					<input type="checkbox" name="equipamiento" value="local">
+					<strong>Local</strong>
+				</label><br>
+
+				<label>
+					<input type="checkbox" name="equipamiento" value="visitante">
+					<strong>Visitante</strong>
+				</label>
+				<br><br>
+
+				<h3>Versión</h3>
+
+				<label>
+					<input type="checkbox" name="versión" value="jugador">
+					<strong>Jugador</strong>
+				</label><br>
+
+				<label>
+					<input type="checkbox" name="versión" value="fan">
+					<strong>Fan</strong>
+				</label>
+				<br><br>
+
+				<label for="direccion"><strong>Dirección:</strong></label><br>
+				<textarea id="direccion" name="direccion" rows="4"></textarea>
+				<br><br>
+
+				<input type="hidden" name="id_registro" value="103">
+
+				<button type="reset">Reset</button>
+				<button type="submit">Enviar</button>
+				<br><br>
+
+				<input type="reset" value="Limpiar">
+				<input type="submit" value="Enviar Datos">
+
+			</fieldset>
+		</form>
+		
+		<footer>
+				
+				
+			<h2>Redes</h2>
+				
+				<p>Síguenos en nuestras redes sociales.</p>
+				
+			   
+			   <div id="rds-1">
+					<a href="https://www.facebook.com/tu_usuario" target="_blank" ><img src="./img1/facebook.png"></a>
+					<a href="https://www.instagram.com/tu_usuario/" target="_blank"><img src="./img1/instagram.png"></a>
+				
+					<a href="https://www.tiktok.com/" target="_blank"><img src="./img1/tiktok.png"></a>
+	   
+				</div>
+			   
+				<p>2026, JerseysSports Official Store</p>
+				
+				
+			</footer>
+		
+	</div>
+
+</body>
+</html>
